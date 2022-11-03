@@ -1,0 +1,21 @@
+{
+  "name": "caremetx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js",
+    "test": "node test.js",
+    "stop": "docker stop mongodb; docker rm mongodb",
+    "db.run": "docker run -d  --name mongodb -p 27017:27017 mongo",
+    "db.exec": "docker exec -it mongodb /bin/sh"
+  },
+  "author": "brian guzman",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.0.3",
+    "fast-csv": "^4.3.6",
+    "mongodb": "^4.11.0"
+  }
+}
