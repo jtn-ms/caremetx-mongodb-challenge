@@ -16,8 +16,7 @@ function IsIdentical(arr1,arr2){
   }
   return true;
 }
-
-const csv_data = csvtojson()
+csvtojson()
   .fromFile("data.csv")
   .then(data => {
     var csv_data = data.map((item)=>Object.values(item));
